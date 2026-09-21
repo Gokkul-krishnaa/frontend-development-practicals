@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JavaScript 63: Character Frequency</title><link rel="stylesheet" href="../assets/style.css"></head>
+<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
+<main class="wrap"><section class="hero"><h1>JavaScript 63: Character Frequency</h1><p>Find character frequency.</p></section>
+<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="s" value="banana"><button onclick="go()">Find</button><pre id="o"></pre><script>const s=document.getElementById("s");const o=document.getElementById("o");function go(){o.textContent=JSON.stringify(s.value.split("").reduce((m,x)=>(m[x]=(m[x]||0)+1,m),{}),null,2)}</script></div></section>
+<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;s&quot; value=&quot;banana&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Find&lt;/button&gt;&lt;pre id=&quot;o&quot;&gt;&lt;/pre&gt;&lt;script&gt;const s=document.getElementById(&quot;s&quot;);const o=document.getElementById(&quot;o&quot;);function go(){o.textContent=JSON.stringify(s.value.split(&quot;&quot;).reduce((m,x)=&gt;(m[x]=(m[x]||0)+1,m),{}),null,2)}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>

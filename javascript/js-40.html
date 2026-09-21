@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JavaScript 40: Callbacks Promises Async Await</title><link rel="stylesheet" href="../assets/style.css"></head>
+<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
+<main class="wrap"><section class="hero"><h1>JavaScript 40: Callbacks Promises Async Await</h1><p>Demonstrate asynchronous JavaScript.</p></section>
+<section class="card"><h2>Working Demonstration</h2><div class="demo"><button onclick="go()">Run</button><p id="o"></p><script>const o=document.getElementById("o");function later(){return new Promise(r=>setTimeout(()=>r("Promise complete"),500))}async function go(){o.textContent="Waiting...";o.textContent=await later()}</script></div></section>
+<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;button onclick=&quot;go()&quot;&gt;Run&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const o=document.getElementById(&quot;o&quot;);function later(){return new Promise(r=&gt;setTimeout(()=&gt;r(&quot;Promise complete&quot;),500))}async function go(){o.textContent=&quot;Waiting...&quot;;o.textContent=await later()}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>

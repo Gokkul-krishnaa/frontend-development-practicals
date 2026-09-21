@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JavaScript 50: Perfect Number</title><link rel="stylesheet" href="../assets/style.css"></head>
+<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
+<main class="wrap"><section class="hero"><h1>JavaScript 50: Perfect Number</h1><p>Check a perfect number.</p></section>
+<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="n" value="28"><button onclick="go()">Check</button><p id="o"></p><script>const n=document.getElementById("n");const o=document.getElementById("o");function go(){let n=+document.getElementById("n").value,s=0;for(let i=1;i<n;i++)if(n%i===0)s+=i;o.textContent=s===n?"Perfect":"Not Perfect"}</script></div></section>
+<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;n&quot; value=&quot;28&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Check&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const n=document.getElementById(&quot;n&quot;);const o=document.getElementById(&quot;o&quot;);function go(){let n=+document.getElementById(&quot;n&quot;).value,s=0;for(let i=1;i&lt;n;i++)if(n%i===0)s+=i;o.textContent=s===n?&quot;Perfect&quot;:&quot;Not Perfect&quot;}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
