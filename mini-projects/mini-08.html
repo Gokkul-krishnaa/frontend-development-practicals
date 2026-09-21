@@ -1,7 +1,43 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mini Project 8: Number guessing game</title><link rel="stylesheet" href="../../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>Mini Project 8: Number guessing game</h1><p>Number guessing game</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="g" type="number"><button onclick="go()">Guess 1-10</button><p id="out"></p><script>const target=Math.ceil(Math.random()*10);function go(){out.textContent=+g.value===target?"Correct!":"Try again."}</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;g&quot; type=&quot;number&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Guess 1-10&lt;/button&gt;&lt;p id=&quot;out&quot;&gt;&lt;/p&gt;&lt;script&gt;const target=Math.ceil(Math.random()*10);function go(){out.textContent=+g.value===target?&quot;Correct!&quot;:&quot;Try again.&quot;}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mini Project 8: Number guessing game</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>Mini Project 8: Number guessing game</h1>
+        <p>Number guessing game</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <input id="g" type="number" /><button onclick="go()">
+            Guess 1-10
+          </button>
+          <p id="out"></p>
+          <script>
+            const target = Math.ceil(Math.random() * 10);
+            function go() {
+              out.textContent = +g.value === target ? "Correct!" : "Try again.";
+            }
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;input id=&quot;g&quot; type=&quot;number&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Guess 1-10&lt;/button&gt;&lt;p id=&quot;out&quot;&gt;&lt;/p&gt;&lt;script&gt;const target=Math.ceil(Math.random()*10);function go(){out.textContent=+g.value===target?&quot;Correct!&quot;:&quot;Try again.&quot;}&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

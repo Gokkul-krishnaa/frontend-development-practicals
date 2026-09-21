@@ -1,7 +1,48 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JavaScript 41: Fetch API</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>JavaScript 41: Fetch API</h1><p>Fetch sample JSON data from a public API.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><button onclick="go()">Fetch</button><pre id="o"></pre><script>const o=document.getElementById("o");async function go(){try{let r=await fetch("https://jsonplaceholder.typicode.com/todos/1");o.textContent=JSON.stringify(await r.json(),null,2)}catch(e){o.textContent="Network request failed."}}</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;button onclick=&quot;go()&quot;&gt;Fetch&lt;/button&gt;&lt;pre id=&quot;o&quot;&gt;&lt;/pre&gt;&lt;script&gt;const o=document.getElementById(&quot;o&quot;);async function go(){try{let r=await fetch(&quot;https://jsonplaceholder.typicode.com/todos/1&quot;);o.textContent=JSON.stringify(await r.json(),null,2)}catch(e){o.textContent=&quot;Network request failed.&quot;}}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript 41: Fetch API</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JavaScript 41: Fetch API</h1>
+        <p>Fetch sample JSON data from a public API.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <button onclick="go()">Fetch</button>
+          <pre id="o"></pre>
+          <script>
+            const o = document.getElementById("o");
+            async function go() {
+              try {
+                let r = await fetch(
+                  "https://jsonplaceholder.typicode.com/todos/1",
+                );
+                o.textContent = JSON.stringify(await r.json(), null, 2);
+              } catch (e) {
+                o.textContent = "Network request failed.";
+              }
+            }
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;button onclick=&quot;go()&quot;&gt;Fetch&lt;/button&gt;&lt;pre id=&quot;o&quot;&gt;&lt;/pre&gt;&lt;script&gt;const o=document.getElementById(&quot;o&quot;);async function go(){try{let r=await fetch(&quot;https://jsonplaceholder.typicode.com/todos/1&quot;);o.textContent=JSON.stringify(await r.json(),null,2)}catch(e){o.textContent=&quot;Network request failed.&quot;}}&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

@@ -1,7 +1,51 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JavaScript 35: Countdown Timer</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>JavaScript 35: Countdown Timer</h1><p>Countdown from a user value.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="n" type="number" value="10"><button onclick="start()">Start</button><h2 id="o"></h2><script>const n=document.getElementById("n");const o=document.getElementById("o");let id;function start(){clearInterval(id);let n=+document.getElementById("n").value;id=setInterval(()=>{o.textContent=n;if(n<=0)clearInterval(id);n--},1000)}</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;n&quot; type=&quot;number&quot; value=&quot;10&quot;&gt;&lt;button onclick=&quot;start()&quot;&gt;Start&lt;/button&gt;&lt;h2 id=&quot;o&quot;&gt;&lt;/h2&gt;&lt;script&gt;const n=document.getElementById(&quot;n&quot;);const o=document.getElementById(&quot;o&quot;);let id;function start(){clearInterval(id);let n=+document.getElementById(&quot;n&quot;).value;id=setInterval(()=&gt;{o.textContent=n;if(n&lt;=0)clearInterval(id);n--},1000)}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript 35: Countdown Timer</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JavaScript 35: Countdown Timer</h1>
+        <p>Countdown from a user value.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <input id="n" type="number" value="10" /><button onclick="start()">
+            Start
+          </button>
+          <h2 id="o"></h2>
+          <script>
+            const n = document.getElementById("n");
+            const o = document.getElementById("o");
+            let id;
+            function start() {
+              clearInterval(id);
+              let n = +document.getElementById("n").value;
+              id = setInterval(() => {
+                o.textContent = n;
+                if (n <= 0) clearInterval(id);
+                n--;
+              }, 1000);
+            }
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;input id=&quot;n&quot; type=&quot;number&quot; value=&quot;10&quot;&gt;&lt;button onclick=&quot;start()&quot;&gt;Start&lt;/button&gt;&lt;h2 id=&quot;o&quot;&gt;&lt;/h2&gt;&lt;script&gt;const n=document.getElementById(&quot;n&quot;);const o=document.getElementById(&quot;o&quot;);let id;function start(){clearInterval(id);let n=+document.getElementById(&quot;n&quot;).value;id=setInterval(()=&gt;{o.textContent=n;if(n&lt;=0)clearInterval(id);n--},1000)}&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

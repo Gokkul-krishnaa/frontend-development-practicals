@@ -1,7 +1,47 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JavaScript 43: localStorage</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>JavaScript 43: localStorage</h1><p>Store and retrieve a value.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="v" value="Gokul"><button onclick="save()">Save</button><button onclick="load()">Load</button><p id="o"></p><script>const v=document.getElementById("v");const o=document.getElementById("o");function save(){localStorage.setItem("studentName",v.value);o.textContent="Saved"}function load(){o.textContent=localStorage.getItem("studentName")||"No data"}</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;v&quot; value=&quot;Gokul&quot;&gt;&lt;button onclick=&quot;save()&quot;&gt;Save&lt;/button&gt;&lt;button onclick=&quot;load()&quot;&gt;Load&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const v=document.getElementById(&quot;v&quot;);const o=document.getElementById(&quot;o&quot;);function save(){localStorage.setItem(&quot;studentName&quot;,v.value);o.textContent=&quot;Saved&quot;}function load(){o.textContent=localStorage.getItem(&quot;studentName&quot;)||&quot;No data&quot;}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript 43: localStorage</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JavaScript 43: localStorage</h1>
+        <p>Store and retrieve a value.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <input id="v" value="Gokul" /><button onclick="save()">Save</button
+          ><button onclick="load()">Load</button>
+          <p id="o"></p>
+          <script>
+            const v = document.getElementById("v");
+            const o = document.getElementById("o");
+            function save() {
+              localStorage.setItem("studentName", v.value);
+              o.textContent = "Saved";
+            }
+            function load() {
+              o.textContent = localStorage.getItem("studentName") || "No data";
+            }
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;input id=&quot;v&quot; value=&quot;Gokul&quot;&gt;&lt;button onclick=&quot;save()&quot;&gt;Save&lt;/button&gt;&lt;button onclick=&quot;load()&quot;&gt;Load&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const v=document.getElementById(&quot;v&quot;);const o=document.getElementById(&quot;o&quot;);function save(){localStorage.setItem(&quot;studentName&quot;,v.value);o.textContent=&quot;Saved&quot;}function load(){o.textContent=localStorage.getItem(&quot;studentName&quot;)||&quot;No data&quot;}&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

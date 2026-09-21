@@ -1,7 +1,54 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JavaScript 44: Responsive Login Validation</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>JavaScript 44: Responsive Login Validation</h1><p>Validate a login form with JavaScript.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><form id="f"><input id="u" placeholder="Username"><input id="p" type="password" placeholder="Password"><button>Login</button></form><p id="o"></p><script>const f=document.getElementById("f");const u=document.getElementById("u");const p=document.getElementById("p");const o=document.getElementById("o");f.onsubmit=e=>{e.preventDefault();o.textContent=u.value&&p.value.length>=6?"Login details valid":"Invalid login"}</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;form id=&quot;f&quot;&gt;&lt;input id=&quot;u&quot; placeholder=&quot;Username&quot;&gt;&lt;input id=&quot;p&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;&lt;button&gt;Login&lt;/button&gt;&lt;/form&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const f=document.getElementById(&quot;f&quot;);const u=document.getElementById(&quot;u&quot;);const p=document.getElementById(&quot;p&quot;);const o=document.getElementById(&quot;o&quot;);f.onsubmit=e=&gt;{e.preventDefault();o.textContent=u.value&amp;&amp;p.value.length&gt;=6?&quot;Login details valid&quot;:&quot;Invalid login&quot;}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript 44: Responsive Login Validation</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JavaScript 44: Responsive Login Validation</h1>
+        <p>Validate a login form with JavaScript.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <form id="f">
+            <input id="u" placeholder="Username" /><input
+              id="p"
+              type="password"
+              placeholder="Password"
+            /><button>Login</button>
+          </form>
+          <p id="o"></p>
+          <script>
+            const f = document.getElementById("f");
+            const u = document.getElementById("u");
+            const p = document.getElementById("p");
+            const o = document.getElementById("o");
+            f.onsubmit = (e) => {
+              e.preventDefault();
+              o.textContent =
+                u.value && p.value.length >= 6
+                  ? "Login details valid"
+                  : "Invalid login";
+            };
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;form id=&quot;f&quot;&gt;&lt;input id=&quot;u&quot; placeholder=&quot;Username&quot;&gt;&lt;input id=&quot;p&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;&lt;button&gt;Login&lt;/button&gt;&lt;/form&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const f=document.getElementById(&quot;f&quot;);const u=document.getElementById(&quot;u&quot;);const p=document.getElementById(&quot;p&quot;);const o=document.getElementById(&quot;o&quot;);f.onsubmit=e=&gt;{e.preventDefault();o.textContent=u.value&amp;&amp;p.value.length&gt;=6?&quot;Login details valid&quot;:&quot;Invalid login&quot;}&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

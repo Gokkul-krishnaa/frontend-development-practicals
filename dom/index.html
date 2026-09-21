@@ -1,1 +1,177 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DOM Manipulation</title><link rel="stylesheet" href="../../assets/style.css"></head><body><header class="top"><strong>Practical Programs</strong><nav class="nav"><a href="../../index.html">Home</a><a href="../index.html">JavaScript</a></nav></header><main class="wrap"><section class="hero"><h1>DOM Manipulation</h1><p>35 separate experiments.</p></section><section class="card"><ol><li><a href="dom-01.html">Change the text content of an HTML element using JavaScript.</a></li><li><a href="dom-02.html">Change the HTML content of an element using innerHTML.</a></li><li><a href="dom-03.html">Change the style of an HTML element dynamically.</a></li><li><a href="dom-04.html">Change the background color of an element when a button is clicked.</a></li><li><a href="dom-05.html">Create a new HTML element dynamically and add it to the webpage.</a></li><li><a href="dom-06.html">Remove an existing HTML element dynamically.</a></li><li><a href="dom-07.html">Replace an existing HTML element with a new element.</a></li><li><a href="dom-08.html">Add and remove CSS classes using JavaScript.</a></li><li><a href="dom-09.html">Toggle a CSS class using JavaScript.</a></li><li><a href="dom-10.html">Change the attributes of an HTML element dynamically.</a></li><li><a href="dom-11.html">Create a dynamic unordered list from an array.</a></li><li><a href="dom-12.html">Create a dynamic ordered list from user input.</a></li><li><a href="dom-13.html">Create a dynamic student table using JavaScript.</a></li><li><a href="dom-14.html">Add new rows to an HTML table dynamically.</a></li><li><a href="dom-15.html">Delete a selected row from an HTML table.</a></li><li><a href="dom-16.html">Edit table data dynamically.</a></li><li><a href="dom-17.html">Create a searchable/filterable table.</a></li><li><a href="dom-18.html">Sort table records using JavaScript.</a></li><li><a href="dom-19.html">Create a dynamic dropdown menu using JavaScript.</a></li><li><a href="dom-20.html">Add options dynamically to a \&lt;select&gt; element.</a></li><li><a href="dom-21.html">Create a dependent dropdown — Country → State → City.</a></li><li><a href="dom-22.html">Create an image gallery dynamically from an array of image data.</a></li><li><a href="dom-23.html">Create an image slideshow using DOM manipulation.</a></li><li><a href="dom-24.html">Create a show/hide password feature.</a></li><li><a href="dom-25.html">Create a show/hide content button.</a></li><li><a href="dom-26.html">Create a tabs interface using DOM manipulation.</a></li><li><a href="dom-27.html">Create an accordion using JavaScript.</a></li><li><a href="dom-28.html">Create a modal popup using JavaScript.</a></li><li><a href="dom-29.html">Create a tooltip dynamically.</a></li><li><a href="dom-30.html">Create a live character counter for a textarea.</a></li><li><a href="dom-31.html">Create a live word counter.</a></li><li><a href="dom-32.html">Create a program to dynamically display the current date and time.</a></li><li><a href="dom-33.html">Create a to-do list using DOM manipulation.</a></li><li><a href="dom-34.html">Create a program to add, edit, and delete to-do items.</a></li><li><a href="dom-35.html">Demonstrate createElement(), appendChild(), remove(), and replaceChild().</a></li></ol></section></main><footer>All programs are separate HTML files.</footer></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>Practical Programs</strong>
+      <nav class="nav">
+        <a href="../../index.html">Home</a
+        ><a href="../index.html">JavaScript</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>DOM Manipulation</h1>
+        <p>35 separate experiments.</p>
+      </section>
+      <section class="card">
+        <ol>
+          <li>
+            <a href="dom-01.html"
+              >Change the text content of an HTML element using JavaScript.</a
+            >
+          </li>
+          <li>
+            <a href="dom-02.html"
+              >Change the HTML content of an element using innerHTML.</a
+            >
+          </li>
+          <li>
+            <a href="dom-03.html"
+              >Change the style of an HTML element dynamically.</a
+            >
+          </li>
+          <li>
+            <a href="dom-04.html"
+              >Change the background color of an element when a button is
+              clicked.</a
+            >
+          </li>
+          <li>
+            <a href="dom-05.html"
+              >Create a new HTML element dynamically and add it to the
+              webpage.</a
+            >
+          </li>
+          <li>
+            <a href="dom-06.html"
+              >Remove an existing HTML element dynamically.</a
+            >
+          </li>
+          <li>
+            <a href="dom-07.html"
+              >Replace an existing HTML element with a new element.</a
+            >
+          </li>
+          <li>
+            <a href="dom-08.html"
+              >Add and remove CSS classes using JavaScript.</a
+            >
+          </li>
+          <li>
+            <a href="dom-09.html">Toggle a CSS class using JavaScript.</a>
+          </li>
+          <li>
+            <a href="dom-10.html"
+              >Change the attributes of an HTML element dynamically.</a
+            >
+          </li>
+          <li>
+            <a href="dom-11.html"
+              >Create a dynamic unordered list from an array.</a
+            >
+          </li>
+          <li>
+            <a href="dom-12.html"
+              >Create a dynamic ordered list from user input.</a
+            >
+          </li>
+          <li>
+            <a href="dom-13.html"
+              >Create a dynamic student table using JavaScript.</a
+            >
+          </li>
+          <li>
+            <a href="dom-14.html">Add new rows to an HTML table dynamically.</a>
+          </li>
+          <li>
+            <a href="dom-15.html">Delete a selected row from an HTML table.</a>
+          </li>
+          <li><a href="dom-16.html">Edit table data dynamically.</a></li>
+          <li>
+            <a href="dom-17.html">Create a searchable/filterable table.</a>
+          </li>
+          <li>
+            <a href="dom-18.html">Sort table records using JavaScript.</a>
+          </li>
+          <li>
+            <a href="dom-19.html"
+              >Create a dynamic dropdown menu using JavaScript.</a
+            >
+          </li>
+          <li>
+            <a href="dom-20.html"
+              >Add options dynamically to a \&lt;select&gt; element.</a
+            >
+          </li>
+          <li>
+            <a href="dom-21.html"
+              >Create a dependent dropdown — Country → State → City.</a
+            >
+          </li>
+          <li>
+            <a href="dom-22.html"
+              >Create an image gallery dynamically from an array of image
+              data.</a
+            >
+          </li>
+          <li>
+            <a href="dom-23.html"
+              >Create an image slideshow using DOM manipulation.</a
+            >
+          </li>
+          <li>
+            <a href="dom-24.html">Create a show/hide password feature.</a>
+          </li>
+          <li><a href="dom-25.html">Create a show/hide content button.</a></li>
+          <li>
+            <a href="dom-26.html"
+              >Create a tabs interface using DOM manipulation.</a
+            >
+          </li>
+          <li>
+            <a href="dom-27.html">Create an accordion using JavaScript.</a>
+          </li>
+          <li>
+            <a href="dom-28.html">Create a modal popup using JavaScript.</a>
+          </li>
+          <li><a href="dom-29.html">Create a tooltip dynamically.</a></li>
+          <li>
+            <a href="dom-30.html"
+              >Create a live character counter for a textarea.</a
+            >
+          </li>
+          <li><a href="dom-31.html">Create a live word counter.</a></li>
+          <li>
+            <a href="dom-32.html"
+              >Create a program to dynamically display the current date and
+              time.</a
+            >
+          </li>
+          <li>
+            <a href="dom-33.html"
+              >Create a to-do list using DOM manipulation.</a
+            >
+          </li>
+          <li>
+            <a href="dom-34.html"
+              >Create a program to add, edit, and delete to-do items.</a
+            >
+          </li>
+          <li>
+            <a href="dom-35.html"
+              >Demonstrate createElement(), appendChild(), remove(), and
+              replaceChild().</a
+            >
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>All programs are separate HTML files.</footer>
+  </body>
+</html>

@@ -1,7 +1,45 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JavaScript 51: Multiplication Table</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>JavaScript 51: Multiplication Table</h1><p>Generate a multiplication table.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="n" value="7"><button onclick="go()">Generate</button><pre id="o"></pre><script>const n=document.getElementById("n");const o=document.getElementById("o");function go(){let n=+document.getElementById("n").value,s="";for(let i=1;i<=10;i++)s+=`${n} × ${i} = ${n*i}\n`;o.textContent=s}</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;n&quot; value=&quot;7&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Generate&lt;/button&gt;&lt;pre id=&quot;o&quot;&gt;&lt;/pre&gt;&lt;script&gt;const n=document.getElementById(&quot;n&quot;);const o=document.getElementById(&quot;o&quot;);function go(){let n=+document.getElementById(&quot;n&quot;).value,s=&quot;&quot;;for(let i=1;i&lt;=10;i++)s+=`${n} × ${i} = ${n*i}\n`;o.textContent=s}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript 51: Multiplication Table</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JavaScript 51: Multiplication Table</h1>
+        <p>Generate a multiplication table.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <input id="n" value="7" /><button onclick="go()">Generate</button>
+          <pre id="o"></pre>
+          <script>
+            const n = document.getElementById("n");
+            const o = document.getElementById("o");
+            function go() {
+              let n = +document.getElementById("n").value,
+                s = "";
+              for (let i = 1; i <= 10; i++) s += `${n} × ${i} = ${n * i}\n`;
+              o.textContent = s;
+            }
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;input id=&quot;n&quot; value=&quot;7&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Generate&lt;/button&gt;&lt;pre id=&quot;o&quot;&gt;&lt;/pre&gt;&lt;script&gt;const n=document.getElementById(&quot;n&quot;);const o=document.getElementById(&quot;o&quot;);function go(){let n=+document.getElementById(&quot;n&quot;).value,s=&quot;&quot;;for(let i=1;i&lt;=10;i++)s+=`${n} × ${i} = ${n*i}\n`;o.textContent=s}&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

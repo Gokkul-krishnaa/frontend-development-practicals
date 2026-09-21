@@ -1,7 +1,48 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JavaScript 6: Factorial</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>JavaScript 6: Factorial</h1><p>Find factorial.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="n" type="number" value="5"><button onclick="go()">Find</button><p id="o"></p><script>const o=document.getElementById("o");const nEl=document.getElementById("n");const oEl=document.getElementById("o");function go(){let n=+nEl.value;let f=1;for(let i=2;i<=n;i++)f*=i;o.textContent=f}</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;n&quot; type=&quot;number&quot; value=&quot;5&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Find&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const o=document.getElementById(&quot;o&quot;);const nEl=document.getElementById(&quot;n&quot;);const oEl=document.getElementById(&quot;o&quot;);function go(){let n=+nEl.value;let f=1;for(let i=2;i&lt;=n;i++)f*=i;o.textContent=f}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript 6: Factorial</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JavaScript 6: Factorial</h1>
+        <p>Find factorial.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <input id="n" type="number" value="5" /><button onclick="go()">
+            Find
+          </button>
+          <p id="o"></p>
+          <script>
+            const o = document.getElementById("o");
+            const nEl = document.getElementById("n");
+            const oEl = document.getElementById("o");
+            function go() {
+              let n = +nEl.value;
+              let f = 1;
+              for (let i = 2; i <= n; i++) f *= i;
+              o.textContent = f;
+            }
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;input id=&quot;n&quot; type=&quot;number&quot; value=&quot;5&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Find&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const o=document.getElementById(&quot;o&quot;);const nEl=document.getElementById(&quot;n&quot;);const oEl=document.getElementById(&quot;o&quot;);function go(){let n=+nEl.value;let f=1;for(let i=2;i&lt;=n;i++)f*=i;o.textContent=f}&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

@@ -1,7 +1,48 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JavaScript 2: Arithmetic Operations</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>JavaScript 2: Arithmetic Operations</h1><p>Perform basic arithmetic.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="a" type="number" value="10"><input id="b" type="number" value="5"><button id="go">Calculate</button><p id="o"></p><script>const o=document.getElementById("o");const aEl=document.getElementById("a");const bEl=document.getElementById("b");const goEl=document.getElementById("go");const oEl=document.getElementById("o");go.onclick=()=>o.textContent=`Sum=${+aEl.value + +bEl.value}, Difference=${aEl.value-bEl.value}, Product=${aEl.value*bEl.value}, Quotient=${aEl.value/bEl.value}`;</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;a&quot; type=&quot;number&quot; value=&quot;10&quot;&gt;&lt;input id=&quot;b&quot; type=&quot;number&quot; value=&quot;5&quot;&gt;&lt;button id=&quot;go&quot;&gt;Calculate&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const o=document.getElementById(&quot;o&quot;);const aEl=document.getElementById(&quot;a&quot;);const bEl=document.getElementById(&quot;b&quot;);const goEl=document.getElementById(&quot;go&quot;);const oEl=document.getElementById(&quot;o&quot;);go.onclick=()=&gt;o.textContent=`Sum=${+aEl.value + +bEl.value}, Difference=${aEl.value-bEl.value}, Product=${aEl.value*bEl.value}, Quotient=${aEl.value/bEl.value}`;&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript 2: Arithmetic Operations</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JavaScript 2: Arithmetic Operations</h1>
+        <p>Perform basic arithmetic.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <input id="a" type="number" value="10" /><input
+            id="b"
+            type="number"
+            value="5"
+          /><button id="go">Calculate</button>
+          <p id="o"></p>
+          <script>
+            const o = document.getElementById("o");
+            const aEl = document.getElementById("a");
+            const bEl = document.getElementById("b");
+            const goEl = document.getElementById("go");
+            const oEl = document.getElementById("o");
+            go.onclick = () =>
+              (o.textContent = `Sum=${+aEl.value + +bEl.value}, Difference=${aEl.value - bEl.value}, Product=${aEl.value * bEl.value}, Quotient=${aEl.value / bEl.value}`);
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;input id=&quot;a&quot; type=&quot;number&quot; value=&quot;10&quot;&gt;&lt;input id=&quot;b&quot; type=&quot;number&quot; value=&quot;5&quot;&gt;&lt;button id=&quot;go&quot;&gt;Calculate&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const o=document.getElementById(&quot;o&quot;);const aEl=document.getElementById(&quot;a&quot;);const bEl=document.getElementById(&quot;b&quot;);const goEl=document.getElementById(&quot;go&quot;);const oEl=document.getElementById(&quot;o&quot;);go.onclick=()=&gt;o.textContent=`Sum=${+aEl.value + +bEl.value}, Difference=${aEl.value-bEl.value}, Product=${aEl.value*bEl.value}, Quotient=${aEl.value/bEl.value}`;&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

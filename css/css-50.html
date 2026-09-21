@@ -1,7 +1,59 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CSS 50: Sticky Header</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>CSS 50: Sticky Header</h1><p>Sticky Header</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><style>.areas{display:grid;grid-template-areas:'head head' 'side main' 'foot foot';gap:10px}.areas>*{padding:20px;background:#eef2ff}.head{grid-area:head}.main{grid-area:main}.s{grid-area:side}.f{grid-area:foot}</style><div class="sticky">Sticky header demo</div><p>Scroll the page to see it stay at the top.</p><div style="height:200px"></div></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;style&gt;.areas{display:grid;grid-template-areas:&#x27;head head&#x27; &#x27;side main&#x27; &#x27;foot foot&#x27;;gap:10px}.areas&gt;*{padding:20px;background:#eef2ff}.head{grid-area:head}.main{grid-area:main}.s{grid-area:side}.f{grid-area:foot}&lt;/style&gt;&lt;div class=&quot;sticky&quot;&gt;Sticky header demo&lt;/div&gt;&lt;p&gt;Scroll the page to see it stay at the top.&lt;/p&gt;&lt;div style=&quot;height:200px&quot;&gt;&lt;/div&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CSS 50: Sticky Header</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>CSS 50: Sticky Header</h1>
+        <p>Sticky Header</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <style>
+            .areas {
+              display: grid;
+              grid-template-areas: "head head" "side main" "foot foot";
+              gap: 10px;
+            }
+            .areas > * {
+              padding: 20px;
+              background: #eef2ff;
+            }
+            .head {
+              grid-area: head;
+            }
+            .main {
+              grid-area: main;
+            }
+            .s {
+              grid-area: side;
+            }
+            .f {
+              grid-area: foot;
+            }
+          </style>
+          <div class="sticky">Sticky header demo</div>
+          <p>Scroll the page to see it stay at the top.</p>
+          <div style="height: 200px"></div>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;style&gt;.areas{display:grid;grid-template-areas:&#x27;head head&#x27; &#x27;side main&#x27; &#x27;foot foot&#x27;;gap:10px}.areas&gt;*{padding:20px;background:#eef2ff}.head{grid-area:head}.main{grid-area:main}.s{grid-area:side}.f{grid-area:foot}&lt;/style&gt;&lt;div class=&quot;sticky&quot;&gt;Sticky header demo&lt;/div&gt;&lt;p&gt;Scroll the page to see it stay at the top.&lt;/p&gt;&lt;div style=&quot;height:200px&quot;&gt;&lt;/div&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

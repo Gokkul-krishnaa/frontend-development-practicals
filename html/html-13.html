@@ -1,7 +1,52 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Responsive Media Query</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>Responsive Media Query</h1><p>A responsive box that changes layout on small screens.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px" class="responsive-demo"><div class="card">One</div><div class="card">Two</div><div class="card">Three</div></div><style>@media(max-width:650px){.responsive-demo{grid-template-columns:1fr!important}}</style></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;div style=&quot;display:grid;grid-template-columns:repeat(3,1fr);gap:10px&quot; class=&quot;responsive-demo&quot;&gt;&lt;div class=&quot;card&quot;&gt;One&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;Two&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;Three&lt;/div&gt;&lt;/div&gt;&lt;style&gt;@media(max-width:650px){.responsive-demo{grid-template-columns:1fr!important}}&lt;/style&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Responsive Media Query</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>Responsive Media Query</h1>
+        <p>A responsive box that changes layout on small screens.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 10px;
+            "
+            class="responsive-demo"
+          >
+            <div class="card">One</div>
+            <div class="card">Two</div>
+            <div class="card">Three</div>
+          </div>
+          <style>
+            @media (max-width: 650px) {
+              .responsive-demo {
+                grid-template-columns: 1fr !important;
+              }
+            }
+          </style>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;div style=&quot;display:grid;grid-template-columns:repeat(3,1fr);gap:10px&quot; class=&quot;responsive-demo&quot;&gt;&lt;div class=&quot;card&quot;&gt;One&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;Two&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;Three&lt;/div&gt;&lt;/div&gt;&lt;style&gt;@media(max-width:650px){.responsive-demo{grid-template-columns:1fr!important}}&lt;/style&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

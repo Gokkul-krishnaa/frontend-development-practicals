@@ -1,7 +1,50 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JavaScript 58: Common Array Elements</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>JavaScript 58: Common Array Elements</h1><p>Find common elements.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="a" value="1,2,3,4"><input id="b" value="3,4,5,6"><button onclick="go()">Find</button><p id="o"></p><script>const a=document.getElementById("a");const b=document.getElementById("b");const o=document.getElementById("o");function go(){let bset=new Set(b.value.split(","));o.textContent=a.value.split(",").filter(x=>bset.has(x)).join(", ")}</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;a&quot; value=&quot;1,2,3,4&quot;&gt;&lt;input id=&quot;b&quot; value=&quot;3,4,5,6&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Find&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const a=document.getElementById(&quot;a&quot;);const b=document.getElementById(&quot;b&quot;);const o=document.getElementById(&quot;o&quot;);function go(){let bset=new Set(b.value.split(&quot;,&quot;));o.textContent=a.value.split(&quot;,&quot;).filter(x=&gt;bset.has(x)).join(&quot;, &quot;)}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript 58: Common Array Elements</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JavaScript 58: Common Array Elements</h1>
+        <p>Find common elements.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <input id="a" value="1,2,3,4" /><input
+            id="b"
+            value="3,4,5,6"
+          /><button onclick="go()">Find</button>
+          <p id="o"></p>
+          <script>
+            const a = document.getElementById("a");
+            const b = document.getElementById("b");
+            const o = document.getElementById("o");
+            function go() {
+              let bset = new Set(b.value.split(","));
+              o.textContent = a.value
+                .split(",")
+                .filter((x) => bset.has(x))
+                .join(", ");
+            }
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;input id=&quot;a&quot; value=&quot;1,2,3,4&quot;&gt;&lt;input id=&quot;b&quot; value=&quot;3,4,5,6&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Find&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const a=document.getElementById(&quot;a&quot;);const b=document.getElementById(&quot;b&quot;);const o=document.getElementById(&quot;o&quot;);function go(){let bset=new Set(b.value.split(&quot;,&quot;));o.textContent=a.value.split(&quot;,&quot;).filter(x=&gt;bset.has(x)).join(&quot;, &quot;)}&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

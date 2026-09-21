@@ -1,7 +1,50 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CSS 63: Responsive Grid with Media Queries</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>CSS 63: Responsive Grid with Media Queries</h1><p>Responsive Grid with Media Queries</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><style>.complete{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media(max-width:700px){.complete{grid-template-columns:1fr}}</style><div class="responsive"><div>Grid 1</div><div>Grid 2</div><div>Grid 3</div></div></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;style&gt;.complete{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media(max-width:700px){.complete{grid-template-columns:1fr}}&lt;/style&gt;&lt;div class=&quot;responsive&quot;&gt;&lt;div&gt;Grid 1&lt;/div&gt;&lt;div&gt;Grid 2&lt;/div&gt;&lt;div&gt;Grid 3&lt;/div&gt;&lt;/div&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CSS 63: Responsive Grid with Media Queries</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>CSS 63: Responsive Grid with Media Queries</h1>
+        <p>Responsive Grid with Media Queries</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <style>
+            .complete {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 12px;
+            }
+            @media (max-width: 700px) {
+              .complete {
+                grid-template-columns: 1fr;
+              }
+            }
+          </style>
+          <div class="responsive">
+            <div>Grid 1</div>
+            <div>Grid 2</div>
+            <div>Grid 3</div>
+          </div>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;style&gt;.complete{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media(max-width:700px){.complete{grid-template-columns:1fr}}&lt;/style&gt;&lt;div class=&quot;responsive&quot;&gt;&lt;div&gt;Grid 1&lt;/div&gt;&lt;div&gt;Grid 2&lt;/div&gt;&lt;div&gt;Grid 3&lt;/div&gt;&lt;/div&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

@@ -1,7 +1,53 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JavaScript 31: To-do List</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>JavaScript 31: To-do List</h1><p>Add and remove tasks.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="task" placeholder="Task"><button onclick="add()">Add</button><ul id="list"></ul><script>const task=document.getElementById("task");const list=document.getElementById("list");const o=document.getElementById("o");function add(){if(!task.value.trim())return;let li=document.createElement("li");li.textContent=task.value+" ";let b=document.createElement("button");b.textContent="Delete";b.onclick=()=>li.remove();li.appendChild(b);list.appendChild(li);task.value=""}</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;task&quot; placeholder=&quot;Task&quot;&gt;&lt;button onclick=&quot;add()&quot;&gt;Add&lt;/button&gt;&lt;ul id=&quot;list&quot;&gt;&lt;/ul&gt;&lt;script&gt;const task=document.getElementById(&quot;task&quot;);const list=document.getElementById(&quot;list&quot;);const o=document.getElementById(&quot;o&quot;);function add(){if(!task.value.trim())return;let li=document.createElement(&quot;li&quot;);li.textContent=task.value+&quot; &quot;;let b=document.createElement(&quot;button&quot;);b.textContent=&quot;Delete&quot;;b.onclick=()=&gt;li.remove();li.appendChild(b);list.appendChild(li);task.value=&quot;&quot;}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript 31: To-do List</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JavaScript 31: To-do List</h1>
+        <p>Add and remove tasks.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <input id="task" placeholder="Task" /><button onclick="add()">
+            Add
+          </button>
+          <ul id="list"></ul>
+          <script>
+            const task = document.getElementById("task");
+            const list = document.getElementById("list");
+            const o = document.getElementById("o");
+            function add() {
+              if (!task.value.trim()) return;
+              let li = document.createElement("li");
+              li.textContent = task.value + " ";
+              let b = document.createElement("button");
+              b.textContent = "Delete";
+              b.onclick = () => li.remove();
+              li.appendChild(b);
+              list.appendChild(li);
+              task.value = "";
+            }
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;input id=&quot;task&quot; placeholder=&quot;Task&quot;&gt;&lt;button onclick=&quot;add()&quot;&gt;Add&lt;/button&gt;&lt;ul id=&quot;list&quot;&gt;&lt;/ul&gt;&lt;script&gt;const task=document.getElementById(&quot;task&quot;);const list=document.getElementById(&quot;list&quot;);const o=document.getElementById(&quot;o&quot;);function add(){if(!task.value.trim())return;let li=document.createElement(&quot;li&quot;);li.textContent=task.value+&quot; &quot;;let b=document.createElement(&quot;button&quot;);b.textContent=&quot;Delete&quot;;b.onclick=()=&gt;li.remove();li.appendChild(b);list.appendChild(li);task.value=&quot;&quot;}&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

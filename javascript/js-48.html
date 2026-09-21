@@ -1,7 +1,52 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JavaScript 48: LCM</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>JavaScript 48: LCM</h1><p>Find LCM of two numbers.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="a" value="12"><input id="b" value="18"><button onclick="go()">Find</button><p id="o"></p><script>const a=document.getElementById("a");const b=document.getElementById("b");const o=document.getElementById("o");function go(){let x=+a.value,y=+b.value,g=x,z=y;while(z)[g,z]=[z,g%z];o.textContent=Math.abs(x*y/g)}</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;a&quot; value=&quot;12&quot;&gt;&lt;input id=&quot;b&quot; value=&quot;18&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Find&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const a=document.getElementById(&quot;a&quot;);const b=document.getElementById(&quot;b&quot;);const o=document.getElementById(&quot;o&quot;);function go(){let x=+a.value,y=+b.value,g=x,z=y;while(z)[g,z]=[z,g%z];o.textContent=Math.abs(x*y/g)}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript 48: LCM</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JavaScript 48: LCM</h1>
+        <p>Find LCM of two numbers.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <input id="a" value="12" /><input id="b" value="18" /><button
+            onclick="go()"
+          >
+            Find
+          </button>
+          <p id="o"></p>
+          <script>
+            const a = document.getElementById("a");
+            const b = document.getElementById("b");
+            const o = document.getElementById("o");
+            function go() {
+              let x = +a.value,
+                y = +b.value,
+                g = x,
+                z = y;
+              while (z) [g, z] = [z, g % z];
+              o.textContent = Math.abs((x * y) / g);
+            }
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;input id=&quot;a&quot; value=&quot;12&quot;&gt;&lt;input id=&quot;b&quot; value=&quot;18&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Find&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const a=document.getElementById(&quot;a&quot;);const b=document.getElementById(&quot;b&quot;);const o=document.getElementById(&quot;o&quot;);function go(){let x=+a.value,y=+b.value,g=x,z=y;while(z)[g,z]=[z,g%z];o.textContent=Math.abs(x*y/g)}&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>

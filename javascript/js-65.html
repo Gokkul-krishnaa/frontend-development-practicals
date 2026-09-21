@@ -1,7 +1,46 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JavaScript 65: Email Regular Expression</title><link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../index.html">Home</a><a href="index.html">Programs</a></nav></header>
-<main class="wrap"><section class="hero"><h1>JavaScript 65: Email Regular Expression</h1><p>Validate an email using regex.</p></section>
-<section class="card"><h2>Working Demonstration</h2><div class="demo"><input id="s" value="student@example.com"><button onclick="go()">Validate</button><p id="o"></p><script>const s=document.getElementById("s");const o=document.getElementById("o");function go(){o.textContent=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s.value)?"Valid email":"Invalid email"}</script></div></section>
-<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;input id=&quot;s&quot; value=&quot;student@example.com&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Validate&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const s=document.getElementById(&quot;s&quot;);const o=document.getElementById(&quot;o&quot;);function go(){o.textContent=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s.value)?&quot;Valid email&quot;:&quot;Invalid email&quot;}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JavaScript 65: Email Regular Expression</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <strong>HTML • CSS • JavaScript Lab</strong>
+      <nav class="nav">
+        <a href="../index.html">Home</a><a href="index.html">Programs</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <h1>JavaScript 65: Email Regular Expression</h1>
+        <p>Validate an email using regex.</p>
+      </section>
+      <section class="card">
+        <h2>Working Demonstration</h2>
+        <div class="demo">
+          <input id="s" value="student@example.com" /><button onclick="go()">
+            Validate
+          </button>
+          <p id="o"></p>
+          <script>
+            const s = document.getElementById("s");
+            const o = document.getElementById("o");
+            function go() {
+              o.textContent = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s.value)
+                ? "Valid email"
+                : "Invalid email";
+            }
+          </script>
+        </div>
+      </section>
+      <details class="card">
+        <summary><strong>View student-friendly code</strong></summary>
+        <pre><code>&lt;input id=&quot;s&quot; value=&quot;student@example.com&quot;&gt;&lt;button onclick=&quot;go()&quot;&gt;Validate&lt;/button&gt;&lt;p id=&quot;o&quot;&gt;&lt;/p&gt;&lt;script&gt;const s=document.getElementById(&quot;s&quot;);const o=document.getElementById(&quot;o&quot;);function go(){o.textContent=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s.value)?&quot;Valid email&quot;:&quot;Invalid email&quot;}&lt;/script&gt;</code></pre>
+      </details>
+    </main>
+    <footer>Practical Programs • Open directly in a browser</footer>
+  </body>
+</html>
