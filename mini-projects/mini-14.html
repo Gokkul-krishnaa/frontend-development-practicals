@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mini Project 14: Random password generator</title><link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="top"><strong>HTML • CSS • JavaScript Lab</strong><nav class="nav"><a href="../../index.html">Home</a><a href="index.html">Programs</a></nav></header>
+<main class="wrap"><section class="hero"><h1>Mini Project 14: Random password generator</h1><p>Random password generator</p></section>
+<section class="card"><h2>Working Demonstration</h2><div class="demo"><button onclick="go()">Generate</button><input id="out" readonly><script>function go(){let s="ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#";out.value=[...Array(12)].map(()=>s[Math.floor(Math.random()*s.length)]).join("")}</script></div></section>
+<details class="card"><summary><strong>View student-friendly code</strong></summary><pre><code>&lt;button onclick=&quot;go()&quot;&gt;Generate&lt;/button&gt;&lt;input id=&quot;out&quot; readonly&gt;&lt;script&gt;function go(){let s=&quot;ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#&quot;;out.value=[...Array(12)].map(()=&gt;s[Math.floor(Math.random()*s.length)]).join(&quot;&quot;)}&lt;/script&gt;</code></pre></details></main><footer>Practical Programs • Open directly in a browser</footer></body></html>
